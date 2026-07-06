@@ -1,0 +1,68 @@
+.summary-card {
+  min-height: 168px;
+  border-radius: var(--radius-lg);
+  color: #ffffff;
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.summary-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.summary-card p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.summary-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 26px;
+}
+
+.summary-card strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.summary-card span {
+  font-size: 15px;
+  opacity: 0.92;
+}
+
+.summary-card.blue {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.summary-card.green {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+.summary-card.amber,
+.summary-card.orange {
+  background: linear-gradient(135deg, #f59e0b, #b45309);
+}
+
+.summary-card.purple {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+}
+
+.summary-card.slate {
+  background: linear-gradient(135deg, #475569, #334155);
+}

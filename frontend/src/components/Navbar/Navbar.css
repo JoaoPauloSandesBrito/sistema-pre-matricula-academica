@@ -1,0 +1,112 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--navbar-height);
+  padding: 20px 32px;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--color-border-soft);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-title-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-menu-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-size: 28px;
+}
+
+.navbar-kicker {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.navbar h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 210px;
+  justify-content: flex-end;
+}
+
+.navbar-avatar,
+.navbar-avatar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.navbar-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-info));
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.navbar-avatar-img {
+  object-fit: cover;
+  border: 2px solid var(--color-surface);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.16);
+}
+
+.navbar-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.navbar-user-info strong {
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.navbar-user-info span {
+  color: var(--color-success);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .navbar-user {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}

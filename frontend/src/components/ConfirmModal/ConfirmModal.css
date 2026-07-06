@@ -1,0 +1,56 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.45);
+  padding: 24px;
+}
+
+.confirm-modal {
+  width: min(100%, 620px);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  padding: 42px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.2);
+}
+
+.modal-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 104px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: rgba(26, 54, 76, 0.16);
+  color: var(--color-primary);
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.confirm-modal h2 {
+  margin: 0 0 14px;
+  font-size: 28px;
+}
+
+.confirm-modal p {
+  margin: 0;
+  color: #374151;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.modal-icon .app-icon {
+  font-size: 58px;
+}

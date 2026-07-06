@@ -1,0 +1,130 @@
+.login-page {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  min-height: 100vh;
+  background: var(--color-background);
+}
+
+.login-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: #ffffff;
+  padding: 48px;
+}
+
+.login-content {
+  width: min(100%, 540px);
+}
+
+.login-content h1 {
+  margin: 0 0 48px;
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.12;
+}
+
+.login-content p {
+  margin: 0 0 32px;
+  font-size: 25px;
+  line-height: 1.45;
+}
+
+.google-button,
+.demo-button {
+  width: 100%;
+  min-height: 54px;
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  color: #1f2937;
+  font-weight: 800;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.google-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #4285f4;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.demo-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.demo-button {
+  min-height: 48px;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+}
+
+.login-content small {
+  display: block;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.login-illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px;
+  background:
+    linear-gradient(135deg, rgba(26, 54, 76, 0.12), rgba(37, 99, 235, 0.08)),
+    #f2f2f7;
+}
+
+.illustration-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: min(100%, 760px);
+  min-height: 560px;
+  border-radius: 36px;
+  background:
+    linear-gradient(135deg, rgba(26, 54, 76, 0.92), rgba(37, 99, 235, 0.72)),
+    url('https://placehold.co/900x700') center / cover;
+  color: #ffffff;
+  padding: 48px;
+  box-shadow: var(--shadow-soft);
+}
+
+.illustration-card strong {
+  font-size: 76px;
+}
+
+.illustration-card span {
+  font-size: 28px;
+}
+
+@media (max-width: 900px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-illustration {
+    display: none;
+  }
+}
+
+.demo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
